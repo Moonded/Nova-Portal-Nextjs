@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="299px" height="41px" viewBox="0 0 299 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-primary</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1.17157288,3.82842712 L3.82842712,1.17157288 C4.57857264,0.421427361 5.59598829,2.39060736e-12 6.65685425,2.38475906e-12 L295,8.46878123e-13 C297.209139,8.46472311e-13 299,1.790861 299,4 L299,34.3431458 C299,35.4040117 298.578573,36.4214274 297.828427,37.1715729 L295.171573,39.8284271 C294.421427,40.5785726 293.404012,41 292.343146,41 L4,41 C1.790861,41 -4.44626966e-11,39.209139 -4.57403004e-11,37 L1.99129602e-12,6.65685425 C3.39368774e-12,5.59598829 0.421427361,4.57857264 1.17157288,3.82842712 Z" id="btn-primary" fill="#2662FF" fill-rule="nonzero"/>
+    </g>
+</svg>

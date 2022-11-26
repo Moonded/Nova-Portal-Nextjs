@@ -1,0 +1,11 @@
+export { default as AdminBody } from './admin/body';
+export { default as DashboardBody } from './dashboard/body';
+export { default as Footer } from './global/Footer';
+export { default as Header } from './global/Header';
+export { default as LogBtn } from './global/LogBtn';
+export { default as IndexBody } from './index/body';
+export { default as OperationBody } from './operation/body';
+export { default as ProfileBody } from './profile/body';
+export { default as ProfileSettingsBody } from './profile/settings_body';
+export { default as SquadronBody } from './squadron/body';
+export { default as MemberBody } from './member/body';
