@@ -40,7 +40,7 @@ export async function getServerSideProps(context) {
 
   var auth = "Bearer " + body.accessToken;
 
-  const GetProfile = await fetch("http://10.0.0.37:3000/api/user", {
+  const GetProfile = await fetch(process.env.URL + "/api/user", {
     method: "POST",
     body: JSON.stringify({ branch: true, ships: true, user: UserName }),
   });
@@ -49,7 +49,7 @@ export async function getServerSideProps(context) {
   // console.log("Profile",Profile);
 
 
-  const GetUser = await fetch("http://10.0.0.37:3000/api/user", {
+  const GetUser = await fetch(process.env.URL + "/api/user", {
     method: "POST",
     body: JSON.stringify({ branch: false, ships: false, user: body.user.name }),
   });
@@ -59,7 +59,7 @@ export async function getServerSideProps(context) {
   var RankID = await User[0].member_type;
   // console.log("RankID",User[0]);
 
-  const GetRanks = await fetch("http://10.0.0.37:3000/api/rank", {
+  const GetRanks = await fetch(process.env.URL + "/api/rank", {
     method: "POST",
     body: JSON.stringify({ id: RankID }),
   });

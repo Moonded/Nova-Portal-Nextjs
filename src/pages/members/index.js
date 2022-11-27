@@ -30,13 +30,13 @@ export async function getServerSideProps(context) {
     };
   }
 
-  const GetUsers = await fetch("http://10.0.0.37:3000/api/user?branch=true", {
+  const GetUsers = await fetch(process.env.URL + "/api/user?branch=true", {
     method: "GET"
   });
 
   var Users = await GetUsers.json();
 
-  const GetUser = await fetch("http://10.0.0.37:3000/api/user", {
+  const GetUser = await fetch(process.env.URL + "/api/user", {
     method: "POST",
     body: JSON.stringify({ user: body.user.name }),
   });
