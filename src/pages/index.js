@@ -4,36 +4,51 @@ import { LogBtn } from "../components/index";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="flex justify-center items-center text-center text-2xl pt-5">
-        <div>
-          NOVA PORTAL DEMO - USER PAGE
-          <br />
-          This DEMO is to show of my work. It is not official but for practise
-          only.
-          <br />
-          <div>
-            TBD: Finnish User Page | Create Database Page | Create Operations
-            Page | Create Squadrons Page
+    <>
+      <div>
+        <div className="absolute top-0 w-screen h-10 bg-red-600">
+          <div className="flex justify-center items-center h-10 text-xs lg:text-sm xl:text-base mx-5">
+            <strong>
+              Be advised this site uses cookies to store your session data. If
+              you don't accept that, please don't use the website
+            </strong>
           </div>
-          <div>
-            Goal is to recreate the entire Nova Portal, not content wise but
-            functionality wise.
+        </div>
+        <div className="relative lg:top-1 top-12 lg:right-5">
+          <div className="flex justify-center lg:justify-end items-center">
+            <div className="w-20">
+              <LogBtn />
+            </div>
+          </div>
+        </div>
+        <div className="pt-20">
+          <div className="grid grid-cols-1 grid-rows-2">
+            <div className="flex justify-center items-center rows-span-2 text-center">
+              <div>
+                <div className="text-5xl"><strong>Welcome!</strong></div>
+                <br />
+                This is a <strong>DEMO</strong> to show of my work. Nothing you
+                see here is officialy tied to NOVA Intergalactic.
+                <br />
+                This Website is still in develoment, meaning not all features
+                are fully implemented yet.
+                <br />
+              </div>
+            </div>
+            <div className="flex justify-center items-center mt-2">
+              <div>
+                <div>
+                  TODO:
+                  <br />● Finnish User Page <br />● Create Database (Wiki){" "}
+                  <br />
+                  ● Create Operation Page <br />● Create Squadrons Page
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="absolute w-full mt-60">
-        <div className="flex justify-center items-center">
-          <div className="w-20">
-            <LogBtn />
-          </div>
-          <div className="space-x-2 ml-2">
-            <a href="/">Home</a>
-            <a href="/dashboard">Dashboard</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 

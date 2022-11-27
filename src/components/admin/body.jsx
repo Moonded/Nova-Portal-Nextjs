@@ -9,11 +9,11 @@ export default function Body(props) {
         {props.users.map((user) => (
           <div key={user.id} className="border grid grid-cols-2 grid-rows-1">
             <div className="border">
-              <div className="inline">User: </div>
+              <div className="inline ml-2">User: </div>
               <div className="inline">{user.id}</div>
             </div>
             <div className="border">
-              <div className="inline">Name: </div>
+              <div className="inline ml-2">Name: </div>
               <div className="inline">{user.name}</div>
             </div>
           </div>

@@ -4,7 +4,7 @@ const endpoints = {
     title: "API",
   },
   paths: {
-    post: ["/api/user", "/api/rank", "/api/user/:name", "/api/ship/:name"],
+    post: ["/api/user", "/api/rank", "/api/user/:name", "/api/ship/{name}"],
   },
 };
 
