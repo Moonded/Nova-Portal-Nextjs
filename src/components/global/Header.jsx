@@ -30,7 +30,7 @@ export default function Header(props) {
         <div className="h-full flex items-center ml-16">
           <a href="/dashboard">
             <img
-              src="/nova/nova-emblem-white-outlined.svg"
+              src="https://files.moonded.com/portal/nova/nova-emblem-white-outlined.svg"
               className="w-10 inline h-12"
             />
             <p className="uppercase font-normal inline ml-2">

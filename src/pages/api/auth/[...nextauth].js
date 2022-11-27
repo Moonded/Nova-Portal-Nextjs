@@ -41,35 +41,30 @@ export const authOptions = {
         where: { id: user.id },
       });
 
-      // console.log("findUser", findUser);
 
-      var auth = "Bearer " + account.access_token;
-      const resGuild = await fetch(
-        "https://discord.com/api/v10/users/@me/guilds",
-        {
-          method: "GET",
-          headers: {
-            Authorization: auth,
-          },
-        }
-      );
+      // var auth = "Bearer " + account.access_token;
+      // const resGuild = await fetch(
+      //   "https://discord.com/api/v10/users/@me/guilds",
+      //   {
+      //     method: "GET",
+      //     headers: {
+      //       Authorization: auth,
+      //     },
+      //   }
+      // );
 
-      const guildData = await resGuild.json();
+      // const guildData = await resGuild.json();
 
-      var isGuild = false;
-      for (var i = 0; i < guildData.length; i++) {
-        if (guildData[i].id === "421412271772794880") {
-          isGuild = true;
-        }
-      }
+      
+      // for (var i = 0; i < guildData.length; i++) {
+      //   if (guildData[i].id === "421412271772794880") {
+      //     isGuild = true;
+      //   }
+      // }
 
+      
+      var isGuild = true;
       if (findUser == null) {
-
-        // const newUserBranch = await prisma.branchcontent.create({
-        //   data: {
-        //     userId: user.id,
-        //   },
-        // });
 
         const newUser = await prisma.user.create({
           data: {
