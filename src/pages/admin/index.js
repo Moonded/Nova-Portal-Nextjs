@@ -10,7 +10,7 @@ export default function Dashboard({ body, Users }) {
   return (
     <div>
       <Header session={body} />
-      <AdminBody users={Users}/>
+      <AdminBody users={Users} />
       <Footer />
     </div>
   );
@@ -28,14 +28,14 @@ export async function getServerSideProps(context) {
       },
     };
   }
-  const GetUsers = await fetch("http://10.0.0.37:3000/api/user", {
-    method: "GET"
+  const GetUsers = await fetch(process.env.URL + "/api/api/user", {
+    method: "GET",
   });
 
   // console.log("GetUsers",await GetUsers.json());
   var Users = await GetUsers.json();
 
-  const GetUser = await fetch("http://10.0.0.37:3000/api/user", {
+  const GetUser = await fetch(process.env.URL + "/api/  api/user", {
     method: "POST",
     body: JSON.stringify({ user: body.user.name }),
   });
