@@ -41,7 +41,7 @@ export async function getServerSideProps(context) {
   });
 
   var User = await GetUser.json();
-  // console.log(User);
+// console.log(User); 
   var isGuild = User[0].isGuild;
   var isAdmin = User[0].isAdmin;
   // console.log(isAdmin);
