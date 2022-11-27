@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
       },
     };
   }
-  const GetUsers = await fetch(process.env.URL + "/api/api/user", {
+  const GetUsers = await fetch(process.env.URL + "/api/user", {
     method: "GET",
   });
 
