@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
   // console.log("GetUsers",await GetUsers.json());
   var Users = await GetUsers.json();
 
-  const GetUser = await fetch(process.env.URL + "/api/  api/user", {
+  const GetUser = await fetch(process.env.URL + "/api/user", {
     method: "POST",
     body: JSON.stringify({ user: body.user.name }),
   });
