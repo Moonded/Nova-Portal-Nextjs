@@ -1,5 +1,4 @@
 import LoginBtn from "./LogBtn";
-import {useState} from 'react';
 import {
   MdAdminPanelSettings,
   MdSettings,
@@ -10,12 +9,13 @@ import {
 import { FaRegAddressCard, FaUsers } from "react-icons/fa";
 import { RiSignalTowerFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 export default function Header(props) {
   var session = props;
 
   var today = new Date();
   var curHr = today.getHours();
-  const [toggle,setToggleViewMode] = useState(false);
+  const [toggleViewMode, setToggleViewMode] = useState(false);
   // var curHr = 18
   var time;
   if (curHr < 12) {
@@ -37,9 +37,7 @@ export default function Header(props) {
               className="w-10 inline h-12"
             />
             <p className="uppercase inline ml-2 text-sm md:text-base">
-              <span className="">
                 Member <strong className="font-black">Portal</strong>
-              </span>
               <span className="opacity-30 block md:inline -mt-5 md:-mt-0 ml-12 md:ml-0 text-xs md:text-base">
                 V.3.0.0-Moonded
               </span>
@@ -61,7 +59,7 @@ export default function Header(props) {
                 />
               </div>
               <div className="block md:hidden">
-                <button onClick={() => setToggleViewMode(!toggle)}>
+                <button onClick={() => setToggleViewMode(!toggleViewMode)}>
                   <GiHamburgerMenu className="text-2xl text-blue-400 inline ml-5 -mt-1" />
                 </button>
               </div>
@@ -69,8 +67,12 @@ export default function Header(props) {
           </div>
         </div>
         <div className="overflow-hidden pointer-events-none">
-          <div className="flex justify-end -mt-12 w-full h-screen ">
-            <div className={`bg-black w-60 pt-12 -mr-${toggle ? '60' : '0'} md:-mr-44 md:hover:-mr-0 transition-all duration-300 pointer-events-auto`}>
+          <div className="flex justify-end -mt-12 h-screen ">
+            <div
+              className={`bg-black w-60 pt-12 -mr-${
+                toggleViewMode ? "60" : "0"
+              } md:-mr-44 md:hover:-mr-0 transition-all duration-300 pointer-events-auto`}
+            >
               <div className="pl-4 mt-2">
                 <div className="w-full">
                   <div>
