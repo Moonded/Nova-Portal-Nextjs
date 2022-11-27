@@ -2,7 +2,7 @@ export default function Body(props) {
   // console.log("props", props);
   return (
     <>
-      <div className="ml-5 mt-5 h-full w-1/4 border overflow-y-scroll">
+      <div className="ml-5 mt-5 h-full w-5/6 md:w-1/4 border overflow-y-scroll">
         <div className="w-full text-center border">
           User List
         </div>
