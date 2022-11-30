@@ -37,7 +37,7 @@ export default function Header(props) {
               className="w-10 inline h-12"
             />
             <p className="uppercase inline ml-2 text-sm md:text-base">
-                Member <strong className="font-black">Portal</strong>
+              Member <strong className="font-black">Portal</strong>
               <span className="opacity-30 block md:inline -mt-5 md:-mt-0 ml-12 md:ml-0 text-xs md:text-base">
                 V.3.0.0-Moonded
               </span>
@@ -69,9 +69,8 @@ export default function Header(props) {
         <div className="overflow-hidden pointer-events-none">
           <div className="flex justify-end -mt-12 h-screen ">
             <div
-              className={`bg-black w-60 pt-12 -mr-${
-                toggleViewMode ? "60" : "0"
-              } md:-mr-44 md:hover:-mr-0 transition-all duration-300 pointer-events-auto`}
+              className={`bg-black pt-12 w-${toggleViewMode ? "60" : "0"
+                } md:w-60 md:-mr-44 md:hover:-mr-0 transition-all duration-300 pointer-events-auto`}
             >
               <div className="pl-4 mt-2">
                 <div className="w-full">

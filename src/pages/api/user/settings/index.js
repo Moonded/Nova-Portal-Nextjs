@@ -4,10 +4,12 @@ import { getToken } from "next-auth/jwt";
 export default async function handle(req, res) {
   const token = await getToken({ req });
 
+
+  
   if (req.method === "POST") {
-    // var body = JSON.parse(req.body);
     var body = JSON.parse(JSON.stringify(req.body));
-    // console.log(JSON.parse(JSON.stringify(req.body)));
+    console.log(body.defence == 'true' ? true : false )
+    console.log(body)
     const updateUser = await prisma.user.update({
       where: {
         id: token.sub,
@@ -21,26 +23,18 @@ export default async function handle(req, res) {
         pilot_license: body.pilot_license,
         branch: {
           update: {
-            where: {
-              userId: token.sub,
-            },
             data: {
-              defence: body.defence,
-              core: body.core,
-              fronttiers: body.fronttiers,
-              relief: body.relief,
-              skyline: body.skyline,
+              defence: body.defence == 'true' ? true : false,
+              core: body.core == 'true' ? true : false,
+              fronttiers: body.fronttier == 'true' ? true : false,
+              relief: body.relief == 'true' ? true : false,
+              skyline: body.skyline == 'true' ? true : false,
             },
-          },
-        },
-        ships: {
-          update: {
             where: {
-              userId: token.sub,
-            },
-            data: {},
+              id: 1
+            }
           },
-        },
+        }
       },
     });
     // console.log(updateUser);

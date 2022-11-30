@@ -9,10 +9,9 @@ import { Header, MemberBody, Footer } from "../../components/index";
 export default function Dashboard({ body, Users}) {
   var session = body;
   return (
-    <div>
+    <div className="h-screen">
       <Header session={body} />
       <MemberBody users={Users}/>
-      <Footer />
     </div>
   );
 }

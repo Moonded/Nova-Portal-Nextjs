@@ -10,10 +10,9 @@ export default function Users({ body, Profile, Rank }) {
   var session = body;
 
   return (
-    <div className="bg-body_primary text-white h-full bg-[url('../public/bg-grid.svg')] bg-repeat bg-center font-Exo">
+    <div className="h-screen">
       <Header session={body} />
       <ProfileBody ranks={Rank} users={Profile} />
-      <Footer />
     </div>
   );
 }

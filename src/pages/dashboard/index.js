@@ -9,10 +9,9 @@ export default function Dashboard({ body, User }) {
 
   var session = body;
   return (
-    <div>
+    <div className="h-screen">
       <Header session={body} />
       <DashboardBody userbody={User} />
-      <Footer />
     </div>
   );
 }

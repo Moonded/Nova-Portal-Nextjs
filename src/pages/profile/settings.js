@@ -11,10 +11,9 @@ export default function Users({ body, User, Rank }) {
   var session = body;
 
   return (
-    <div className="bg-body_primary text-white h-full bg-[url('../public/bg-grid.svg')] bg-repeat bg-center font-Exo">
+    <div className="h-screen">
       <Header session={body} />
       <ProfileSettingsBody users={User} rank={Rank} />
-      <Footer />
     </div>
   );
 }
@@ -34,7 +33,7 @@ export async function getServerSideProps(context) {
 
   const GetUser = await fetch(process.env.URL + "/api/user", {
     method: "POST",
-    body: JSON.stringify({ user: body.user.name }),
+    body: JSON.stringify({ user: body.user.name, branch: true }),
   });
   var User = await GetUser.json();
 

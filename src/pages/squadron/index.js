@@ -9,10 +9,9 @@ import { Header, SquadronBody, Footer } from "../../components/index";
 export default function Dashboard({ body }) {
   var session = body;
   return (
-    <div>
+    <div className="h-screen">
       <Header session={body} />
       <SquadronBody/>
-      <Footer />
     </div>
   );
 }
@@ -30,7 +29,7 @@ export async function getServerSideProps(context) {
     };
   }
 
-  const GetUser = await fetch("http://10.0.0.37:3000/api/user", {
+  const GetUser = await fetch(process.env.URL + "/api/user", {
     method: "POST",
     body: JSON.stringify({ user: body.user.name }),
   });

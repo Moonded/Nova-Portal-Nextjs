@@ -49,7 +49,7 @@ export default function Body(props) {
                   <div>
                     <img
                       title="Core"
-                      src="/nova/nova-core-emblem-white.svg"
+                      src="https://files.moonded.com/portal/nova/nova-core-emblem-white.svg"
                       className={
                         "mt-2 h-10 -mx-1.5 inline" +
                         (User.branch[0].core ? " opacity-100" : " opacity-30")
@@ -57,7 +57,7 @@ export default function Body(props) {
                     />
                     <img
                       title="Defence"
-                      src="/nova/nova-defence-emblem-white.svg"
+                      src="https://files.moonded.com/portal/nova/nova-defence-emblem-white.svg"
                       className={
                         "mt-2 h-10 -mx-1.5 inline" +
                         (User.branch[0].defence
@@ -67,7 +67,7 @@ export default function Body(props) {
                     />
                     <img
                       title="Fronttiers"
-                      src="/nova/nova-fronttiers-emblem-white.svg"
+                      src="https://files.moonded.com/portal/nova/nova-fronttiers-emblem-white.svg"
                       className={
                         "mt-2 h-10 -mx-1.5 inline" +
                         (User.branch[0].fronttiers
@@ -77,7 +77,7 @@ export default function Body(props) {
                     />
                     <img
                       title="Relief"
-                      src="/nova/nova-relief-emblem-white.svg"
+                      src="https://files.moonded.com/portal/nova/nova-relief-emblem-white.svg"
                       className={
                         "mt-2 h-10 -mx-1.5 inline" +
                         (User.branch[0].relief ? " opacity-100" : " opacity-30")
@@ -85,7 +85,7 @@ export default function Body(props) {
                     />
                     <img
                       title="Skyline"
-                      src="/nova/nova-skyline-emblem-white.svg"
+                      src="https://files.moonded.com/portal/nova/nova-skyline-emblem-white.svg"
                       className={
                         "mt-2 h-10 -mx-1.5 inline" +
                         (User.branch[0].skyline
@@ -121,7 +121,7 @@ export default function Body(props) {
                     <div className="inline-block mr-40">
                       <p className="text-5xl font-bold">{User.archivements}</p>
                       <span className="text-xs italic opacity-60">
-                        Archives
+                        Archivements
                       </span>
                     </div>
                   </div>
