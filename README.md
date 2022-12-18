@@ -10,7 +10,7 @@ The portal is not written to be used by everyone and thus the setup is a bit mor
 # How do I setup the repo?
 
 First of start by cloning the repo, and install everything by using `yarn`.
-Afterwards, go ahead and create the [PostgresSQL](https://www.postgresql.org/) database, create the tables with [Prisma](https://www.prisma.io/) and fill the `Rank` table with 5 rows after the following sheme:
+Afterwards, go ahead and create the [PostgresSQL](https://www.postgresql.org/) database, create the tables with [Prisma](https://www.prisma.io/) and fill the `Rank` table with 7 rows after the following sheme:
 
 | ID  | html_name      | img                                                     |
 | --- | -------------- | ------------------------------------------------------- |
